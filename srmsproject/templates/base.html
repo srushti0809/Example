@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}
+        {% endblock title %} - SRMS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><i class="fa-solid fa-graduation-cap"></i> SRMS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="/addstudent"> <i class="fa-sharp fa-solid fa-plus"></i> Add Student
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/liststudent"><i class="fa-solid fa-list-ul"></i> Student List
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/addcourse"><i class="fa-sharp fa-solid fa-plus"></i> Add Course
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/listcourse"><i class="fa-solid fa-list-ul"></i> Course List
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/addresult"><i class="fa-sharp fa-solid fa-plus"></i> Add Result
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/listresult"><i class="fa-solid fa-list-ul"></i> Result List
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+  {% if messages %}
+  {% for message in messages %}
+  <div class="alert alert-dismissible alert-{{ message.tags }}">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" fdprocessedid="nugmg5">
+    </button>
+  </div>
+  {% endfor %}
+  {% endif %}
+    
+
+{% block body %}{% endblock body %}
+
+    <footer class="mt-auto mb-4">
+        <div class="text-center">
+            <span>
+                Copyright &copy <script>document.write(new Date().getFullYear())</script> Srushti Shah.
+            </span>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

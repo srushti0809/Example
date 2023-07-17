@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Student List{% endblock title %}
+
+{% block body %}
+  <div class=" mt-4 mb-4 container-fluid">
+    <div class="card bg-light ms-4 me-4 mb-4">
+      {% if students %}
+      <div class="card-header">
+                <i class="fa-solid fa-user"></i> Students</div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <div class="table-responsive">
+                  
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">First Name</th>
+                                <th scope="col">Family Name</th>
+                                <th scope="col">Date Of Birth</th>
+                                <th scope="col">Email Address</th>
+                                <th scope="col">Actions</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+
+                              {% for student in students %}
+                                <tr>
+                                <td>{{student.first_name}}</td>
+                                <td>{{student.family_name}}</td>
+                                <td>{{student.dob}}</td>
+                                <td>{{student.email}}</td>
+                                <td>
+                                  <a class="btn btn-danger" href="/delete_student/{{student.id}}"> <i class="fa-solid fa-xmark fa-2xl" ></i></a>
+                                </td>
+                                </tr>
+                              {% endfor %}
+                            </tbody>
+                          </table> 
+                    </div>
+                  </p>
+          </div>
+      {% else %}
+        <h4 class="alert alert-primary ms-4 me-4">No Student Record</h4>
+      {% endif %}
+      </div>        
+    </div>
+{% endblock body %}

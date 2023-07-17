@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Course List{% endblock title %}
+{% block body %}
+<div class="mt-4 mb-4 container-fluid">
+  <div class="card bg-light ms-4 me-4 mb-4">
+    {% if courses %}
+    <div class="card-header"> Course</div>
+      <div class="card-body">
+        <p class="card-text">
+          <div class="table-responsive">
+              <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">Course Name</th>
+                      <th scope="col">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for course in courses %}
+                    <tr>
+                      <td>{{ course.course_name }}</td>
+                      <td>
+                        <a class="btn btn-danger" href="/delete_course/{{course.id}}"> <i class="fa-solid fa-xmark fa-2xl" ></i></a>
+                      </td>
+                    </tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+          </div>
+        </p>
+      </div>
+    {% else %}
+     <h4 class="alert alert-primary ms-4 me-4">No Course Record</h4>
+    {% endif %}
+          
+  </div>      
+</div>
+{% endblock body %}
+
+      
+      

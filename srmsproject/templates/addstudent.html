@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Student {% endblock title %}
+
+{% block body %}
+{% comment %} <script type="text/javascript">
+    window.onload=function(){
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementsByName("dob")[0].setAttribute('max', today);
+    }
+</script>  {% endcomment %}
+
+
+<div class="container mt-5">
+  <h2>Add the Students: </h2>
+  <div class="card bg-light mb-3" style="max-width: 80rem;">
+      <div class="card-body">
+          <form method="post" action="/addstudent" class=" row g-3">
+            {% csrf_token %}
+              <div class="col-md-6">
+                  <label for="first_name" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter Your First name" required>
+              </div>
+              <div class="col-md-6">
+                  <label for="family_name" class="form-label">Family Name</label>
+                  <input type="text" class="form-control" id="familyname" name="familyname" placeholder="Enter Your Family name" required>
+              </div>
+              <div class="col-md-4">
+                  <label for="dob" class="form-label">Date Of Birth</label>
+                  <input type="date" class="form-control" id="dob" name="dob" max="2012-12-31" required>
+              </div>
+              <div class="col-md-8">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" class="form-control" placeholder="Sam@gmail.com" name="email" required>
+              </div>
+              <div class="col-md-12">
+                  <button type="submit" class="btn btn-dark " fdprocessedid="2mrd0v">Submit</button>
+              </div>
+          </form>
+      </div>
+    </div>
+</div>
+{% endblock body %}
