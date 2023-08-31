@@ -3,15 +3,15 @@ The list pages are as follows:
 # Home
 # Add New Students
   - On this page the user sees a form with the following controls:
-      o First name
-      o Family name
-      o Date of birth
-      o Email address
-      o Submit button
-  ● Upon submission, all controls must be filled
-  ● Email validation must prevent the user from entering invalid email addresses (eg. w@goo)
-  ● Date of birth must be a valid date and the student must be at least 10 years old.
-  ● Once all of the above are met, the new student is added to the systems, and the app shows a notification for the new addition and clears all the controls for the user to add more students.
+      - First name
+      - Family name
+      - Date of birth
+      - Email address
+      - Submit button
+  - Upon submission, all controls must be filled
+  - Email validation must prevent the user from entering invalid email addresses (eg. w@goo)
+  - Date of birth must be a valid date and the student must be at least 10 years old.
+  - Once all of the above are met, the new student is added to the systems, and the app shows a notification for the new addition and clears all the controls for the user to add more students.
 # Students List
   ● On this page the user sees a list of all students in a tabular form
   ● All the students’ info must be visible on the table
