@@ -13,31 +13,31 @@ The list pages are as follows:
   - Date of birth must be a valid date and the student must be at least 10 years old.
   - Once all of the above are met, the new student is added to the systems, and the app shows a notification for the new addition and clears all the controls for the user to add more students.
 # Students List
-  ● On this page the user sees a list of all students in a tabular form
-  ● All the students’ info must be visible on the table
-  ● Other than students’ info, there must be one more column that contains buttons for deletion of the students
-  ● If the user clicks on the cross button the corresponding student will be deleted from the table
+  - On this page the user sees a list of all students in a tabular form
+  - All the students’ info must be visible on the table
+  - Other than students’ info, there must be one more column that contains buttons for deletion of the students
+  - If the user clicks on the cross button the corresponding student will be deleted from the table
 # Add New Courses
-  ● On this page the user sees a form with the following controls
-      ○ Course name
-      ○ Submit button
-  ● Upon submission, all controls must be filled
-  ● Once all the details are entered, the new course is added to the systems, and the app shows a notification
+  - On this page the user sees a form with the following controls
+      - Course name
+      - Submit button
+  - Upon submission, all controls must be filled
+  - Once all the details are entered, the new course is added to the systems, and the app shows a notification
   for the new addition and clears all the controls for the user to add more students.
 # Courses List
-  ● On this page the user sees a list of all courses in a tabular form
-  ● All the course info must be visible on the table
-  ● Other than course info, there must be one more column that contains buttons for deletion of the  courses.
-  ● If the user clicks on the cross button the corresponding course will be deleted from the table.
+  - On this page the user sees a list of all courses in a tabular form
+  - All the course info must be visible on the table
+  - Other than course info, there must be one more column that contains buttons for deletion of the  courses.
+  - If the user clicks on the cross button the corresponding course will be deleted from the table.
 # Add New Results
-  ● On this page the user sees a form with the following controls:
-      ○ Course name (must be a selectable dropdown box that has all the course names)
-      ○ Student Name (must be a selectable dropdown box that has all the students names)
-      ○ Score (a dropdown box that has the values A, B, C, D, E, and F)
-      ○ Submit button
-  ● User must select one student, one course, and one score
-  ● Once all the details are selected, the new result is added to the systems, and the app shows a notification for the new addition and clears all the controls for the user to add more students.
+  - On this page the user sees a form with the following controls:
+      - Course name (must be a selectable dropdown box that has all the course names)
+      - Student Name (must be a selectable dropdown box that has all the students names)
+      - Score (a dropdown box that has the values A, B, C, D, E, and F)
+      - Submit button
+  - User must select one student, one course, and one score
+  - Once all the details are selected, the new result is added to the systems, and the app shows a notification for the new addition and clears all the controls for the user to add more students.
 # Results List
-  ● If a course is deleted from the Update courses page no scores must be shown for that course on this page.
-  ● If a student is deleted from the Update Students page no scores must be shown for that student on this page.
+  - If a course is deleted from the Update courses page no scores must be shown for that course on this page.
+  - If a student is deleted from the Update Students page no scores must be shown for that student on this page.
 
