@@ -1,6 +1,6 @@
 # Example
 Student Result Management system
-List pages are as follows: /n
+The list pages are as follows: 
 o Home
 o Add New Students
   ● On this page the user sees a form with the following controls:
