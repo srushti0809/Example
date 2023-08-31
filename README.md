@@ -2,7 +2,7 @@
 The list pages are as follows: 
 # Home
 # Add New Students
-  ● On this page the user sees a form with the following controls:
+  - On this page the user sees a form with the following controls:
       o First name
       o Family name
       o Date of birth
