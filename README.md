@@ -1,5 +1,5 @@
 # Example
-Student Result Management system
+## Student Result Management system
 The list pages are as follows: 
 o Home
 o Add New Students
